@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Home from './component/Home/Home';
 
+import NotFound from './component/NotFound/NotFound.js';
+import Chart from './component/Chart/Chart';
+import Conditional from './component/Conditional-rendring/Conditional';
+import Contex from './component/Contex-api/Contex';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Routes>
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/conditional-randring' element={<Conditional></Conditional>}></Route>
+        <Route path='/contex-api' element={<Contex></Contex>}></Route>
+        <Route path='/rechart' element={<Chart></Chart>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
+      </Routes>
     </div>
   );
 }

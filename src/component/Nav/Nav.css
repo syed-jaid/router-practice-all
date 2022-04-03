@@ -1,0 +1,17 @@
+.main-div {
+    background-color: darkgray;
+    color: white;
+}
+
+
+
+.link-of-nav {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 17px;
+    color: white;
+}
+
+.link-of-nav:hover {
+    color: rgb(0, 0, 0);
+}
