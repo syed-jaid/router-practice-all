@@ -7,8 +7,8 @@ const Count = () => {
     const [num4, setnum4] = useState(0)
     // num1 === 5 ? setnum1(100) : console.log('data1');
     // num2 === 5 && setnum2(10);
-    num3 === 5 || console.log(100);
-    // num1 === 5 ? setnum1(100) : console.log('data4');
+    // num3 === 5 || console.log(100);
+    // num1 === 5  setnum1(100) : console.log('data4');
 
     return (
         <div>
